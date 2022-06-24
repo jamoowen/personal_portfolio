@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>James Owen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/small_logo.ico') }}">
+    <noscript>
+        <link rel="stylesheet" href="static/css/noscript.css" />
+        
+    </noscript>
+</head>
+
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Portfolio</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+
+
+
+        <!-- Banner -->
+        <section id="banner">
+            <header>
+                <h2>Projects</h2>
+
+            </header>
+        </section>
+
+        <!-- Main -->
+        <div class="wrapper style2">
+
+            <article id="pbl" class="container special">
+                <a href="#" class="image featured"><img src="static/images/pbweb.png" alt="" /></a>
+                <header>
+                    <h2><a href="#">Park Boxing London</a></h2>
+
+                </header>
+                <p>
+                    Website made for a personal training business, specializing in boxing training.
+                    Gets input from user, calls an API (find that postcode)to convert entered data
+                    (postal code) into GPS coordinates. Calls another API (geopy) to calculate
+                    the distance between the given GPS location and a constant to determine if
+                    client is within range of services.
+                    Additionally, implemented form using wtforms which takes input and sends an
+                    email to the business owners detailing the customer's queries and details.
+                </p>
+                <footer>
+                    <a href="https://github.com/jamoowen/park_boxing_london" class="button">code</a>
+                </footer>
+            </article>
+        </div>
+        <div class="wrapper style2">
+
+            <article id="fin" class="container special">
+                <a href="#" class="image featured"><img src="static/images/finance.png" alt="" /></a>
+                <header>
+                    <h2><a href="#">Broking app</a></h2>
+
+                </header>
+                <p>
+                    Web application made using flask. Has login and sign-up feature which stores
+                    user data in a relational database. Uses flask session to create a cookie on the
+                    user. Contacts IEX API to receive current share prices of a given stock, when the
+                    user searches for said stock. Allows user to buy the given stock and updates their
+                    cash and equity holdings within the database accordingly. Also allows user to
+                    sell stocks held and ensures the user has enough cash to fund purchases and enough
+                    stocks to sell. (Project completed as part of CS50 course and assistance was given)
+                </p>
+                <footer>
+                    <a href="https://github.com/jamoowen/cs50_finance" class="button">code</a>
+                </footer>
+            </article>
+        </div>
+        <div class="wrapper style2">
+
+            <article id="dna" class="container special">
+                <a href="#" class="image featured"><img src="static/images/dna.png" alt="" /></a>
+                <header>
+                    <h2><a href="#">DNA app</a></h2>
+
+                </header>
+                <p>
+                    Application which initally takes two command line arguments to determine the
+                    given DNA sequence to be analyzed and a list of many different peoples' DNA sequences.
+                    App reads the csv files and then loops through the DNA sequences to determine which matches
+                    the sample. If the match is successfull, the name of the correct person is printed out and
+                    the function ends.
+
+                </p>
+                <footer>
+                    <a href="https://github.com/jamoowen/cs50_dna" class="button">code</a>
+                </footer>
+            </article>
+        </div>
+        <div class="wrapper style2">
+
+            <article id="pass" class="container special">
+                <a href="#" class="image featured"><img src="static/images/passcheck.png" alt="" /></a>
+                <header>
+                    <h2><a href="#">Password checker</a></h2>
+
+                </header>
+                <p>
+                    Python app using the pwndedpasswords API. Takes command line arguments containing
+                    certain passwords. Hashes the given password through SHA1 and then runs the
+                    hashed password through a function which calls the API. The count of how many
+                    times the password has been leaked is returned and then finally printed to screen.
+                </p>
+                <footer>
+                    <a href="https://github.com/jamoowen/password_checker" class="button">code</a>
+                </footer>
+            </article>
+        </div>
+
+
+
+
+        <!-- Footer -->
+        <div id="footer">
+            <div class="container">
+
+
+                <div class="row">
+                    <div class="col-12">
+
+                        <!-- Contact -->
+                        <section class="contact">
+                            <header>
+                                <h3><a href="/contact">Contact</a></h3>
+                            </header>
+
+                            <ul class="icons">
+                                <li><a href="https://twitter.com/jmsowen24" class="icon brands fa-twitter"><span
+                                            class="label">Twitter</span></a></li>
+                                <li><a href="https://github.com/jamoowen?tab=repositories"
+                                        class="icon brands fa-github"><span class="label">Github</span></a></li>
+                                <li><a href="/contact" class="icon regular fa-envelope"><span
+                                            class="label">envelope</span></a></li>
+                                <li><a href="https://www.linkedin.com/in/jamesowen1997/"
+                                        class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                            </ul>
+                        </section>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/jquery.dropotron.min.js"></script>
+    <script src="static/js/jquery.scrolly.min.js"></script>
+    <script src="static/js/jquery.scrollex.min.js"></script>
+    <script src="static/js/browser.min.js"></script>
+    <script src="static/js/breakpoints.min.js"></script>
+    <script src="static/js/util.js"></script>
+    <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
